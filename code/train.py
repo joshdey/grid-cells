@@ -22,7 +22,7 @@ from __future__ import print_function
 import matplotlib
 import numpy as np
 import tensorflow as tf
-import Tkinter  # pylint: disable=unused-import
+#import Tkinter  # pylint: disable=unused-import
 
 matplotlib.use('Agg')
 

@@ -22,7 +22,12 @@ from __future__ import print_function
 import matplotlib
 import numpy as np
 import tensorflow as tf
-#import Tkinter  # pylint: disable=unused-import
+#import Tkinter 
+
+import dataset_reader  # pylint: disable=g-bad-import-order, g-import-not-at-top
+import model  # pylint: disable=g-bad-import-order
+import scores  # pylint: disable=g-bad-import-order
+import utils  # pylint: disable=g-bad-import-order
 
 matplotlib.use('Agg')
 

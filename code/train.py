@@ -28,13 +28,9 @@ import dataset_reader  # pylint: disable=g-bad-import-order, g-import-not-at-top
 import model  # pylint: disable=g-bad-import-order
 import scores  # pylint: disable=g-bad-import-order
 import utils  # pylint: disable=g-bad-import-order
+#tf.disable_v2_behavior()
 
 matplotlib.use('Agg')
-
-import dataset_reader  # pylint: disable=g-bad-import-order, g-import-not-at-top
-import model  # pylint: disable=g-bad-import-order
-import scores  # pylint: disable=g-bad-import-order
-import utils  # pylint: disable=g-bad-import-order
 
 
 # Task config
@@ -217,7 +213,7 @@ def train():
                       np.mean(loss_acc), np.std(loss_acc))
       if epoch % FLAGS.saver_eval_time == 0:
         res = dict()
-        for _ in xrange(FLAGS.training_evaluation_minibatch_size //
+        for _ in range(FLAGS.training_evaluation_minibatch_size //
                         FLAGS.training_minibatch_size):
           mb_res = sess.run({
               'bottleneck': bottleneck,

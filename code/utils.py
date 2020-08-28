@@ -112,7 +112,8 @@ def concat_dict(acc, new_data):
     else:
       return np.asarray([kk])
 
-  for k, v in new_data.iteritems():
+  #for k, v in new_data.iteritems(): 
+  for k, v in iter(new_data.items()):
     if isinstance(v, dict):
       if k in acc:
         acc[k] = concat_dict(acc[k], v)

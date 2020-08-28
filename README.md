@@ -46,18 +46,18 @@ The files contained in the repository are the following:
 
 ## Train
 
-The implementation requires an installation of
+The implementation requires an installation of Python==3.6.8
 [TensorFlow](https://www.tensorflow.org/) version 1.12, and
 [Sonnet](https://github.com/deepmind/sonnet) version 1.27.
 
 ```shell
 $ virtualenv env
 $ source env/bin/activate
-$ pip install --upgrade numpy==1.13.3
+$ pip install --upgrade numpy==1.19.1
 $ pip install --upgrade tensorflow==1.12.0-rc0
 $ pip install --upgrade dm-sonnet==1.27
-$ pip install --upgrade scipy==1.0.0
-$ pip install --upgrade matplotlib==1.5.2
+$ pip install --upgrade scipy==1.5.2
+$ pip install --upgrade matplotlib==3.1.0
 $ pip install --upgrade tensorflow-probability==0.5.0
 $ pip install --upgrade wrapt==1.9.0
 ```

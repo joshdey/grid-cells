@@ -57,7 +57,7 @@ tf.flags.DEFINE_string('task_lstm_init_type', 'softmax',
                        'Type of LSTM initialisation, soft or hard.')
 tf.flags.DEFINE_bool('task_velocity_inputs', True,
                      'Input velocity.')
-tf.flags.DEFINE_list('task_velocity_noise', [0.0, 0.0, 0.0],
+tf.flags.DEFINE_list('task_velocity_noise', [0.97, 0.93, 0.16],
                      'Add noise to velocity.')
 
 # Model config
@@ -74,7 +74,7 @@ tf.flags.DEFINE_float('model_init_weight_disp', 0.0,
                       'Initial weight displacement.')
 
 # Training config
-tf.flags.DEFINE_integer('training_epochs', 1000, 'Number of training epochs.')
+tf.flags.DEFINE_integer('training_epochs', 100, 'Number of training epochs.')
 tf.flags.DEFINE_integer('training_steps_per_epoch', 1000,
                         'Number of optimization steps per epoch.')
 tf.flags.DEFINE_integer('training_minibatch_size', 10,
